@@ -1,4 +1,30 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 p
 {
     font-size: 40px;
+}
+
+p::before 
+{
+    content: "Before...";
+    color: red;
+}
+
+p::after
+{
+    content: "... The end";
+    color: green;
+}
+
+.clip
+{
+    width: 500px;
+    height: 400px;
+    background: url("https://images.unsplash.com/photo-1638913658179-18c9a9c943f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-size: cover;
+    clip-path: polygon(50% 0%, 100% 50%, 0 50%);
 }
