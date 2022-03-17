@@ -67,4 +67,19 @@ p::after {
     width: 400px;
     background: red;
     letter-spacing: 1rem;
+    cursor: pointer;
+}
+
+.clickeffect
+{
+    margin: 5rem;
+    width: 200px;
+    height: 200px;
+    background: green;
+    -webkit-transition: all 1.5s ease;
+}
+
+.clickeffect:checked
+{
+    transform: rotate(360deg) scale(1.5);
 }
